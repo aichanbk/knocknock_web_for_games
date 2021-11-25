@@ -43,20 +43,29 @@ html{
     display: block;
 }
 
+#nav li:hover .subnav {
+    display: block;
+}
+
 #nav > li:hover > a{
     color: #000;
     background-color: #ccc;
 }
 
 #nav .subnav {
-    /* display: none; */
+    display: none;
+    min-width: 128px;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #nav .subnav a {
     color: #000;
     padding: 0 36px;
+    line-height: 38px;
 }
 
 #nav .subnav li:hover a {
@@ -65,8 +74,7 @@ html{
 }
 
 #silder{
-        min-height: 400px;
-        background-color: #333;
+       
 }
 
 #content{
