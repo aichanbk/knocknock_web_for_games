@@ -12,12 +12,35 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+#nav{
+    display: inline-block;
+}
 
 #header{
     height: 46px;
     background-color:black;
     
 }
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* #nav .logo{
+    image-rendering: 46*46px;
+} */
 
 #nav, .subnav{
     list-style-type: none;
@@ -60,6 +83,10 @@ html{
     left: 0;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
 }
 
 #nav .subnav a {
