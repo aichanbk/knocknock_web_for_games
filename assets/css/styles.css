@@ -9,6 +9,17 @@
 
 }
 
+.logo img{
+    /* padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 40px; */
+    float:left;
+    width: 150px;
+    margin-top: 3px;
+    margin-left: 100px;
+    margin-right: 620px; 
+}
+
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,9 +54,7 @@ html{
     line-height: 46px;
 }
 
-/* #nav .logo{
-    image-rendering: 46*46px;
-} */
+
 
 #nav, .subnav{
     list-style-type: none;
@@ -63,6 +72,8 @@ html{
     color: #fff;
     text-transform: uppercase;
 }
+
+
 
 #nav li a {
     text-decoration: none;
@@ -138,6 +149,33 @@ html{
 
 #content{
 
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-heading,
+#content .section-sub-heading{
+    text-align: center;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    width: 800px;
+    padding-left: 100px;
+    padding-right: 100px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #footer{
