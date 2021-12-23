@@ -77,7 +77,7 @@ html{
 
 #nav > li:hover > a{
     color: #000;
-    background-color:#ccc;
+    background-color:#B0E0E6;
 }
 
 #nav .subnav {
@@ -102,7 +102,7 @@ html{
 
 #nav .subnav li:hover a {
     color: #000;
-    background-color: #ccc;
+    background-color: #B0E0E6;
 }
 
 #slider{
