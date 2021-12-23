@@ -17,8 +17,13 @@ html{
 }
 
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
-    background-color:black;
+    background-color:rgb(0,10,255);
+    z-index: 1;
     
 }
 
@@ -72,7 +77,7 @@ html{
 
 #nav > li:hover > a{
     color: #000;
-    background-color: #ccc;
+    background-color:#ccc;
 }
 
 #nav .subnav {
@@ -100,8 +105,35 @@ html{
     background-color: #ccc;
 }
 
-#silder{
-       
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url(/assets/img/slider/slider1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content{
