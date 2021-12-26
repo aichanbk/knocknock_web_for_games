@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.clear{
+    clear: both;
+}
+
 #main{
 
 }
@@ -16,8 +20,8 @@
     float:left;
     width: 150px;
     margin-top: 3px;
-    margin-left: 100px;
-    margin-right: 620px; 
+    margin-left: 150px;
+    margin-right: 570px; 
 }
 
 html{
@@ -171,11 +175,46 @@ html{
 
 #content .section-sub-heading{
     font-size: 15px;
+    font-style: italic;
+    line-height: 1.4;
+    opacity: 0.8;
     width: 800px;
     padding-left: 100px;
     padding-right: 100px ;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#content .news-list{
+    margin-top: 48px;
+    
+}
+
+#content .news-item {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#content .news-name{
+    font-size: 20px;
+    
+}
+
+#content .news-img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#content .news-info{
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: justify;
+
 }
 
 #footer{
