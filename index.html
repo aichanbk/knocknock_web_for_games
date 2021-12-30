@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knocknock</title>
+    <link rel="icon" href="./assets/img/logo1.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -12,27 +13,28 @@
     <div id="main">
         <div id="header">
            <div class="logo">
-               <img src="./assets/img/logo/logowhite.png" alt="Logo">
+               <img src="./assets/img/logo/logo1.png" alt="Logo">
            </div>
             
            <!-- Begin: nav -->
           
             <ul id="nav">
                 
-                <li><a href="">HOME</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">GAMES</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#games">GAMES</a></li>
                 <li>
-                    <a href="">
+                    <a>
                         COMPANY
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
+                    
                     <ul class="subnav">
-                       <li><a href="">About</a></li>
-                       <li><a href="">Contact</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#contact">Contact</a></li>
                     </ul>
                </li>
-                <li><a href="">SUPPORT</a></li>
+                <li><a href="#footer">SUPPORT</a></li>
             </ul>
            <!-- End: nav -->
 
@@ -55,39 +57,38 @@
         <div id="content">
 
             <!-- News Section -->
-            <div class="content-section">
+            <div id="news" class="content-section">
                 <h2 class="section-heading">GAMING NEWS</h2>
                 <p class="section-sub-heading">The biggest video game news, rumors, previews, and info about the PC, PS4, Xbox, Switch, & mobile titles you play</p>
-                <div class="news-list">
-                    <div class="news-item">
+                <div class="row news-list">
+                    <div class="column column-half text-center">
                         <p class="news-name">It Takes Two</p>
                         <img src="./assets/img/news/ok1.png" alt="" class="news-img">
                         <p class="news-info">Beneath exhilarating rollercoaster rides and silly conversations with squirrels, It Takes Two has a heavy heart. It’s about divorce and the toll taken on a daughter who doesn’t want to lose her family. It’s about decaying love and the differences that divide us. It’s about not wanting to face reality and not wanting to let go. It’s also about hope and uncertainty, the past creating a better future, and finding common ground no matter how much it may hurt. All of these elements are beautifully woven into a colorful and soulful adventure that hits hard, both in its moving narrative and clever gameplay. It Takes Two succeeds in being a game that pushes two individuals to work together to create a relationship that works, but for how long?...</p>
                     </div>
 
-                    <div class="news-item">
+                    <div class="column column-half text-center">
                         <p class="news-name">A Way Out</p>
                         <img src="./assets/img/news/ok2.png" alt="" class="news-img">
                         <p class="news-info">A Way Out does some truly incredible things with co-operative game design. Taking splitscreen play and injecting it with fresh ideas, wonderful cinematic camera work and creating something that’s truly built with two players in mind, it’s incredibly intuitive.Unfortunately, an unconvincing narrative, poor voice acting and inconsistent visuals don’t quite live up to these foundations. A Way Out’s mechanical concepts will live far longer in the memory than its artistic choices...</p>
 
                     </div>
 
-                    <div class="news-item">
+                    <div class="column column-half text-center">
                         <p class="news-name">NieR: Automata</p>
                         <img src="./assets/img/news/ok3.png" alt="" class="news-img">
-                        <p class="news-info">What is life? What does it mean to be alive? Can we atone for our past sins, or are we doomed to repeat history forever? Maybe these weren't the questions you expected from Nier: Automata, a game that - on the surface at least - is about a sexy robot fighting other robots with swords and a talking laser turret. But that sort of philosophical existentialism is exactly what you'll get if you play, along with a healthy dose of awe-inspiring martial acrobatics and swordplay, courtesy of developer Platinum Games...</p>
+                        <p class="news-info">What is life? What does it mean to be alive? Can we atone for our past sins, or are we doomed to repeat history forever? Maybe these weren't the questions you expected from Nier: Automata, a game that - on the surface at least - is about a sexy robot fighting other robots with swords and a talking laser turret.But that sort of philosophical existentialism is exactly what you'll get if you play,along with a healthy dose of awe-inspiring martial acrobatics and swordplay, courtesy of developer Platinum Games...</p>
 
                     </div>
 
-                    <div class="news-item">
+                    <div class="column column-half text-center">
                         <p class="news-name">God of War</p>
                         <img src="./assets/img/news/ok4.png" alt="" class="news-img">
                         <p class="news-info">It takes a brave developer to entirely change the formula of a long-running, highly successful series. “If it ain’t broke, don’t fix it” rings true for many franchises. To change the fundamentals of a series risks upsetting a fanbase that may have been around for, at times, decades. For Sony Santa Monica to change the very fabric of God of War is a phenomenal gamble – but one that, for the most part, pays off. God of War is superb, offering a stunningly detailed and lush world built with a level of detail that makes it wondrous to explore. It also has room to breath, allowing Kratos and Atreus’ roller-coaster relationship to build into something that can almost rival The Last of Us’ Ellie and Joel. While a lot has changed for God of War, it still holds one of the most satisfying and entertaining combat systems in gaming...</p>
                     </div>
 
-                    <a href="#" class="news-more-btn">
-                        Read more
-                        <i class="more-btn ti-more"></i>
+                    <a class="news-more-btn">
+                        Read more <i class="read-more-btn ti-more"></i>
                     </a>
 
                     <div class="clear"></div>
@@ -95,56 +96,56 @@
             </div>
 
             <!-- Games Section -->
-            <div class="game-section">
+            <div id="games" class="game-section">
 
                 <div class="content-section">
                     <h2 class="section-heading text-white">OUR GAMES</h2>
                     <p class="section-sub-heading text-white">Enter another world</p>
 
                     <!-- Games list -->
-                <div class="games-list">
-                    <div class="game-item">
+                <div class="row games-list">
+                    <div class="column column-third">
                         <img src="./assets/img/games/game1.png" alt="Game" class="game-img">
                         <div class="game-body ">
                             <h3 class="game-heading">Project:Kira</h3>
                             <p class="game-time">Release Date <span class="game-release-time">Coming soon</span> </p>
                             <p class="game-detail">Genre <span class="game-genre">Horor Adventure</span> </p>
                             <p class="game-player">Player <span class="game-amount-player">1</span> </p>
-                            <a href="#" class="game-web-btn ">
+                            <button class="game-web-btn js-game-web">
                                 <i class="game-double-right-icon ti-angle-double-right"></i>
                                 OFFICIAL SITE
                                 <i class="game-layer-icon ti-layers"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="game-item">
+                    <div class="column column-third">
                         <img src="./assets/img/games/game2.png" alt="Game" class="game-img">
                         <div class="game-body ">
                             <h3 class="game-heading">Project:Nemesis</h3>
                             <p class="game-time">Release Date <span class="game-release-time">Coming soon</span> </p>
                             <p class="game-detail">Genre <span class="game-genre">Action Adventure</span> </p>
                             <p class="game-player">Player <span class="game-amount-player">1</span> </p>
-                            <a href="#" class="game-web-btn ">
+                            <button class="game-web-btn js-game-web">
                                 <i class="game-double-right-icon ti-angle-double-right"></i>
                                 OFFICIAL SITE
                                 <i class="game-layer-icon ti-layers"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="game-item">
+                    <div class="column column-third">
                         <img src="./assets/img/games/game3.png" alt="Game" class="game-img">
                         <div class="game-body ">
                             <h3 class="game-heading">Project:π</h3>
                             <p class="game-time">Release Date <span class="game-release-time">Coming soon</span> </p>
                             <p class="game-detail">Genre <span class="game-genre">Action RPG</span> </p>
                             <p class="game-player">Player <span class="game-amount-player">1</span> </p>
-                            <a href="#" class="game-web-btn ">
+                            <button class="game-web-btn js-game-web">
                                 <i class="game-double-right-icon ti-angle-double-right"></i>
                                 OFFICIAL SITE
                                 <i class="game-layer-icon ti-layers"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -154,33 +155,154 @@
             </div>
 
              <!-- Company Section -->
-             <div class="content-section">
+             <div id="about" class="content-section">
                 <h2 class="section-heading">COMPANY</h2>
                 <p class="section-sub-heading">Welcome to Knocknock, the industry leader in creating video games that resonate with gamers from all around the world.</p>
+                
+                <div class="section-about">
+                    <h3>About us</h3>
+                    <div class="row">
+                        <div class="column column-third">
+                            <p class="company-heading">Our history</p>
+                            <p class="company-body">Established in 2021,located in Ha Noi, Knocknock was born out of raw passion for video games.</p>
+                            <p class="company-footer">Dũng cảm - Ứng biến - Tin cậy  <br> ( Glory to Cter)</p>
+                        </div>
+
+                        <div class="column column-third">
+                            <p class="company-heading">Our mission</p>
+                            <p class="company-body">There is an inner fire, fueled in every member of the studio. It comes from what we surround ourselves with, from the games we play, from where we live and who we are accompanied by.</p>
+                            <p class="company-footer">We want to hone that fire and make it grow. It’s what makes the games we create so unique. As a studio, we have one mission: making the best video games on the planet. We want to tell breathtaking, mature stories to global audiences, without losing the attention to detail that has made us who we are today.</p>
+                        </div>
+
+                        <div class="column column-third">
+                            <p class="company-heading">Meet the rebels</p>
+                            <p class="company-body">The studio is home to well many game-making professionals from all over the globe. We speak many different languages but share one love — games.</p>
+                            <p class="company-footer">Whether it’s through the unique atmosphere of the work environment we create or the fresh approach to the projects we’re involved in, Knocknock is a place that escapes the confines of corporate-style game development. Thanks to this approach, we offer you what others cannot — an opportunity to make games you’d like to play and the freedom to express yourself by creating what you love.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <!-- Begin: Contact section -->
+                <div id="contact" class="section-contact">
+                    <h3>Contact us</h3>
+                    <div class="row contact-content">
+                        <div class="column column-half contact-info">
+                            <p><i class="ti-location-pin"></i>Ha Noi, Viet Nam</p>
+                            <p><i class="ti-mobile"></i>Phone: +84 00000000</p>
+                            <p><i class="ti-email"></i>Email: mail@gmail.com</p>
+                        </div>
+
+                        <div class="column column-half contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="column column-half">
+                                        <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    </div>
+
+                                    <div class="column column-half">
+                                        <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="column column-full mt-8">
+                                        <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                    </div>
+                                </div>
+
+                                <input class="form-submit-btn mt-16" type="submit" value="SEND">
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- End: Contact section -->
             </div>
 
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
         </div>
 
         <div id="footer">
-            
+            <div class="social-list">
+                <a href="https://www.facebook.com/hant1201"><i class="ti-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/thanh-h%C3%A0-nguy%E1%BB%85n-64811a221/"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/hant1201"><i class="ti-github"></i></a>
+                <a href="https://twitter.com/hant1201"><i class="ti-twitter-alt"></i></a>
+            </div>
+
+            <p class="copyright">All rights reserved.</p>
         </div>
     </div>
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
 
             <header class="modal-header">
-                <i class="ti-bolt"></i>
-                Page Not Found
+                <i class="modal-heading-icon ti-bolt"></i>
+                Oops! This project is in development, we're very sorry
             </header>
 
             <div class="modal-body">
+                <label for="name" class="modal-label">
+                    <i class="credit-card-icon ti-credit-card"></i>
+                    Donate for me to complete this project
+                    <div class="card-detail">
+                        <p>MB Bank: 123456789 Name: ABC</p>
+                    </div>
+                </label>
+                <input id="name" type="text" class="modal-input" placeholder="Tell me your name">
+
+                <label for="noti" class="modal-label">
+                    <i class="noti-icon ti-bell"></i>
+                    Get notification about our games
+                </label>
+                <input id="noti" type="text" class="modal-input" placeholder="Email">  
                 
+                <button id="send-email">
+                    Send <i class="ti-face-smile"></i>
+                </button>
             </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a>help?</a></p>
+            </footer>
 
         </div>
     </div>
+
+    <script>
+        const gameBtns = document.querySelectorAll('.js-game-web')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        //Hàm thêm class open vào modal để hiển thị lên bảng modal
+        function showGameModal(){
+            modal.classList.add('open')
+        }
+        // Lặp qua từng button và lắng nghe hành vi click
+        for ( const gameBtn of gameBtns){
+            gameBtn.addEventListener('click',showGameModal)
+        }
+
+        //Hàm gỡ class open ở modal để ẩn modal đi
+        function closeGameModal(){
+            modal.classList.remove('open')
+        }
+        //Nghe hành vi click vào nút close
+        modalClose.addEventListener('click',closeGameModal)
+        modal.addEventListener('click',closeGameModal)
+
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation() //Ngừng việc nổi bọt dẫn đến kết quả bấm vào modal ko bị mất 
+        })
+
+    </script>
 </body>
 </html>

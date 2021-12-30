@@ -8,8 +8,50 @@
 .clear{
     clear: both;
 }
+
 .text-white{
     color: #fff !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.column-full{
+    width: 100%;
+}
+
+.column-half{
+    width: 50%;
+}
+
+.column-third{
+    width: calc(100%/3);
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
 }
 
 #main{
@@ -17,17 +59,15 @@
 }
 
 .logo img{
-    /* padding-top: 7px;
-    padding-left: 20px;
-    padding-right: 40px; */
     float:left;
-    width: 150px;
-    margin-top: 3px;
+    width: 200px;
+    margin-top: 2px;
     margin-left: 150px;
-    margin-right: 570px; 
+    margin-right: 520px; 
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 #nav{
@@ -154,13 +194,9 @@ html{
     margin-top: 25px;
 }
 
-#content{
-
-}
-
 #content .content-section {
     width: 800px;
-    padding: 40px 0;
+    padding: 50px 0 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,15 +229,8 @@ html{
     
 }
 
-#content .news-item {
-    float: left;
-    width: 50%;
-    text-align: center;
-}
-
 #content .news-name{
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 
 #content .news-img{
@@ -212,7 +241,7 @@ html{
 
 #content .news-info{
     width: 350px;
-    height: 350px;
+    min-height: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -235,16 +264,15 @@ html{
     background-color: #B0E0E6;
 }
 
+/* .news-more-btn i {
+    display: inline-block;
+    width: 16px;
+    padding-top: 5px;
+} */
+
 /* Game Setion */
 .game-section{
     background-color: rgb(0,10,255); 
-}
-
-.game-item{
-    padding-top: 20px;
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
 }
 
 .game-img{
@@ -258,8 +286,6 @@ html{
 
 .games-list{
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 32px;
 }
 
@@ -332,10 +358,123 @@ html{
 .game-web-btn:hover{
     color: #000;
     background-color: #B0E0E6;
+    cursor: pointer;
+}
+
+/* Company section */
+.section-about h3{
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    /* color: rgb(0,10,255,0.6); */   
+}
+
+.section-about .company-heading{
+    font-size: 25px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #f44336;
+}
+
+.section-about .company-body{
+    min-height: 180px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.section-about .company-footer{
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.section-contact h3{
+    text-align: center;
+    padding-top: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    /* color: rgb(0,10,255,0.6); */   
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"]{
+    display: inline-block;
+    width: 35px;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+    outline: 1px solid #B0E0E6;
+}
+
+.contact-form .form-submit-btn:hover{
+    color: #000;
+    background-color: #B0E0E6;
+    cursor: pointer;
+}
+
+.map-section img{
+    width: 100%;
 }
 
 #footer{
+    padding: 50px 16px;
+    text-align: center;
+}
 
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .social-list a:hover{
+    opacity: 0.5;
+}
+
+#footer .copyright{
+    margin-top: 15px;
 }
 
 .modal{
@@ -345,4 +484,123 @@ html{
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header{
+    background: rgb(0,10,255);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-heading-icon{
+    margin-right: 16px;
+}
+
+.modal-close:hover{
+    opacity: 1;
+    background: #f44336;
+
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card-detail{
+    min-width: 350px;
+    margin-left: 36px;
+}
+
+.credit-card-icon,
+.noti-icon{
+    margin-right: 10px;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#send-email{
+    background: rgb(0,10,255,0.8);
+    border: none;
+    width: 150px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#send-email:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right; 
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateX(-1250px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalClosing {
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-1250px);
+    }
 }
