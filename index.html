@@ -8,19 +8,26 @@
     <link rel="icon" href="./assets/img/logo1.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
-           <div class="logo">
+
+           <!-- <div class="logo">
                <img src="./assets/img/logo/logo1.png" alt="Logo">
-           </div>
-            
+           </div> -->
+            <a class="logo-link" href="#">
+               <img src="./assets/img/logo/logo1.png" alt="Knocknock">
+            </a>
            <!-- Begin: nav -->
           
-            <ul id="nav">
-                
-                <li><a href="#">HOME</a></li>
+           <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <ul id="nav"> 
+                <li><a class="first-the-a" href="#">HOME</a></li>
                 <li><a href="#news">NEWS</a></li>
                 <li><a href="#games">GAMES</a></li>
                 <li>
@@ -39,12 +46,11 @@
            <!-- End: nav -->
 
            <!-- Begin: search -->
-            <div class="search-btn">
+            <!-- <div class="search-btn">
                 <i class="search-icon ti-search"></i>
-            </div>
+            </div> -->
            <!-- End: search -->
-
-
+            
         </div>
 
         <div id="slider">
@@ -304,5 +310,21 @@
         })
 
     </script>
+
+    <!-- Viết script menu cho mobile bắt sự kiện nhấn vào  -->
+    <script>
+        var header =document.getElementById('header');
+        var mobileMenu =document.getElementById('mobile-menu');
+        
+        mobileMenu.onclick = function (){
+            var isClosed = header.clientHeight ===46;
+            if (isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = '46px';
+            }
+        }
+    </script>
+
 </body>
 </html>
