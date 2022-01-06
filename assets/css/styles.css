@@ -199,7 +199,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url(/assets/img/slider/slider1.jpg);
+    background-image: url(../img/slider/slider1.jpg);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,6 +224,7 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {
@@ -487,6 +488,8 @@ html{
     padding: 10px 16px;
     float: right;
     outline: 1px solid #B0E0E6;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .contact-form .form-submit-btn:hover{
