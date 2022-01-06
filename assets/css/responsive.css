@@ -6,23 +6,64 @@
     }
 }
 
+/* Tablet and Mobile */
+@media(max-width: 1023px){
+    .news-more-btn{
+        padding: 15px 16px;
+    }
+
+    .game-web-btn{
+        padding: 14px 16px;
+    }
+
+    .contact-form .form-submit-btn{
+        padding: 15px 16px;
+    }
+
+    .modal-close{
+        padding: 16px;
+    }
+
+    .modal-input{
+        padding: 12px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+
+    #footer .social-list{
+        font-size: 48px;
+    }
+
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) 
 {
-
-    /* #header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 46px;
-        background-color:rgb(0,10,255);
-        z-index: 1;
+    #header{
         overflow: hidden; 
-    } */
+    }
 
-    #mobile-menu{
-        display: block;
+    #nav .subnav{
+        position: initial;
+        background-color: #141e61;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 6px 45px;
+    }
+
+    #nav li a {
+        padding: 2px 24px;
     }
 
     #nav > li{
@@ -34,34 +75,38 @@
         margin-top: 60px;
     }
 
-    /* #header .logo-link img{
-        border: 0;
-        box-sizing: border-box;
-        height: 46px;
-    } */
-
-    /* #header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 46px;
-        background-color:rgb(0,10,255);
-        z-index: 1;
-        overflow: hidden; 
-    } */
-
-    /* #nav .mobile-menu-btn{
-        display: inline-block;
-    } */
- 
+    #mobile-menu{
+        display: block;
+    }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+    .s-full-width,
+    .s-column-full{
+        width: 100% !important;
+    }
 
-    /* #mobile-menu{
-        display: block;
+    .s-mt-8{
+        margin-top: 8px;
+    }
+
+    #header{
+        overflow: hidden; 
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #141e61;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 6px 45px;
+    }
+
+    #nav li a {
+        padding: 2px 24px;
     }
 
     #nav > li{
@@ -69,14 +114,80 @@
     }
 
     #nav {
-        display: inline-block;
-        float: left;
-        margin-top: 50px;
+        display: block;
+        margin-top: 60px;
     }
 
-    #header .logo-link img{
-        border: 0;
-        box-sizing: border-box;
-        height: 46px;
-    } */
+    #mobile-menu{
+        display: block;
+    }
+
+    #header .logo-link{
+        position: absolute;
+        top: 0;
+        left: 6%;
+    }
+
+    #content .news-item{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    #content .news-info{
+        width: 90%;
+        min-height: 200px;
+    }
+
+    #content .news-img{
+        width: 90%;
+    }
+
+    .game-web-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #content .section-sub-heading{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .section-about .company-body{
+        min-height: 60px;
+        text-align: justify;
+    }
+
+    .section-about .company-footer{
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form{
+        margin-top: 16px;
+    }   
+    
+    .section-contact h3{
+        padding-top: 32px;
+    }
+
+    /* Fix modal */
+    .modal-header{
+        height: 150px;
+        font-size: 25px;
+    }
+
+    .modal-label{
+        font-size: 18px;
+    }
+
+    .modal-footer{
+        padding: 0 16px 16px;
+    }
+
+    #send-email{
+        width: 100%;
+    }
+
 }
