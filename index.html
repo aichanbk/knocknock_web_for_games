@@ -14,20 +14,17 @@
     <div id="main">
         <div id="header">
 
-           <!-- <div class="logo">
-               <img src="./assets/img/logo/logo1.png" alt="Logo">
-           </div> -->
             <a class="logo-link" href="#">
                <img src="./assets/img/logo/logo1.png" alt="Knocknock">
             </a>
            <!-- Begin: nav -->
-          
+            <!-- Mobile menu btn -->
            <div id="mobile-menu" class="mobile-menu-btn">
             <i class="menu-icon ti-menu"></i>
             </div>
 
             <ul id="nav"> 
-                <li><a class="first-the-a" href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#news">NEWS</a></li>
                 <li><a href="#games">GAMES</a></li>
                 <li>
@@ -315,15 +312,28 @@
     <script>
         var header =document.getElementById('header');
         var mobileMenu =document.getElementById('mobile-menu');
+        var headerHeight =header.clientHeight;
         
+        //Đóng mở mobile menu
         mobileMenu.onclick = function (){
-            var isClosed = header.clientHeight ===46;
+            var isClosed = header.clientHeight === headerHeight;
             if (isClosed){
-                header.style.height = 'auto';
+                header.style.height = '100%';
             }else{
-                header.style.height = '46px';
+                header.style.height = null;
             }
         }
+
+        //Tự động đóng khi chọn menu
+        var menuItems =document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0;i<menuItems.length;i++){
+            var menuItem=menuItems[i];
+
+            menuItem.onclick = function(){
+                header.style.height=null;
+            }
+        }
+
     </script>
 
 </body>

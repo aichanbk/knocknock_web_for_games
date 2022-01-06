@@ -58,30 +58,27 @@
     overflow: hidden;
 }
 
-/* .logo img{
-    display: inline-block;
-    float:left;
-    width: 200px;
-    margin-top: 2px;
-    margin-left: 50px;
-} */
+#header .logo-link{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
 
 #header .logo-link img{
     border: 0;
     box-sizing: border-box;
     height: 46px;
-    margin-left: 100px;
 }
 
 html{
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
-#nav{
+
+/* #nav{
     display: inline-block;
     float: right;
-    /* margin-right: 100px; */
-}
+} */
 
 #header{
     position: fixed;
@@ -120,6 +117,9 @@ html{
 #header .mobile-menu-btn{
     float: right;
     padding: 0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #header .menu-icon{
@@ -230,7 +230,7 @@ html{
 #content .content-section {
     width: 800px;
     max-width: 100%;
-    padding: 50px 0 60px;
+    padding: 75px 0 60px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
